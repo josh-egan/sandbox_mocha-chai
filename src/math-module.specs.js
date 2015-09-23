@@ -10,5 +10,11 @@ describe('math module', function () {
 
       expect(result).to.equal(5)
     })
+
+    it('should correctly add negative numbers', function () {
+      var result = mathModule.add(-3, -5)
+
+      expect(result).to.equal(-8)
+    })
   })
 })
