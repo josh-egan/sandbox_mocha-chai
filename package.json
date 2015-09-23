@@ -4,8 +4,10 @@
   "description": "A sandbox for configuring and using the mocha test framework and the chai assertion library",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha ./src/math-module.specs.js --ui bdd --reporter progress",
-    "test-watch": "npm test -- --watch"
+    "test": "./node_modules/.bin/mocha",
+    "test-watch": "npm test -- --watch",
+    "test-teamcity": "npm test -- --reporter mocha-teamcity-reporter",
+    "test-coverage": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,9 @@
   "homepage": "https://github.com/josh-egan/sandbox_mocha-chai",
   "devDependencies": {
     "chai": "^3.3.0",
-    "mocha": "^2.3.3"
+    "istanbul": "^0.3.20",
+    "mocha": "^2.3.3",
+    "mocha-minimalist-reporter": "^1.1.0",
+    "mocha-teamcity-reporter": "0.0.4"
   }
 }
