@@ -1,0 +1,27 @@
+{
+  "name": "sandbox_mocha-chai",
+  "version": "0.0.1",
+  "description": "A sandbox for configuring and using the mocha test framework and the chai assertion library",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./src/math_module.specs.js --ui bdd --reporter progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josh-egan/sandbox_mocha-chai.git"
+  },
+  "private": true,
+  "keywords": [
+    "mocha",
+    "chai"
+  ],
+  "author": "Joshua Egan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josh-egan/sandbox_mocha-chai/issues"
+  },
+  "homepage": "https://github.com/josh-egan/sandbox_mocha-chai",
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  }
+}
