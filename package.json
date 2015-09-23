@@ -4,7 +4,8 @@
   "description": "A sandbox for configuring and using the mocha test framework and the chai assertion library",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha ./src/math-module.specs.js --ui bdd --reporter progress"
+    "test": "./node_modules/.bin/mocha ./src/math-module.specs.js --ui bdd --reporter progress",
+    "test-watch": "./node_modules/.bin/mocha ./src/math-module.specs.js --ui bdd --reporter progress --watch"
   },
   "repository": {
     "type": "git",
