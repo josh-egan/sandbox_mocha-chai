@@ -1,3 +1,4 @@
-./**/*.specs.js
+./src/**/*.specs.js
 --ui bdd
 --reporter mocha-minimalist-reporter
+--require ./test/assign-globals

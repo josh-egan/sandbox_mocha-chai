@@ -1,7 +1,4 @@
-var chai = require('chai')
 var mathModule = require('./math-module')
-
-var expect = chai.expect
 
 describe('math module', function () {
   describe('add', function () {
